@@ -12,6 +12,21 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function adminlte_image()
+    {
+        return 'https://picsum.photos/300/300';
+    }
+
+    public function adminlte_desc()
+    {
+        return 'Soy el super admin';
+    }
+
+    public function adminlte_profile_url()
+    {
+        return 'profile/username';
+    }
+    
     /**
      * The attributes that are mass assignable.
      *
